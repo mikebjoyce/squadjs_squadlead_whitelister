@@ -20,9 +20,18 @@ Players can check their own progress in-game using a chat command. All admin-fac
 
 ## Installation
 
-Add this to your `config.json` plugins array:
+Add this to your `config.json`:
 
 ```json
+ "connectors": {
+    "sqlite": {
+      "dialect": "sqlite",
+      "storage": "squad-server.sqlite"
+    }
+  },
+
+...
+
 {
     "plugin": "SquadLeaderWhitelist",
     "enabled": true,
